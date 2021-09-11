@@ -1,0 +1,272 @@
+/* Reset CSS */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+::selection{
+	color: $color-white;
+	background: $color-primary;
+}
+
+html,
+body{
+	scroll-behavior: smooth;
+}
+
+html{
+	font-size: 16px;
+}
+
+body {
+	color: $color-secondary;
+	font-family: $font-primary;
+	background-color: $color-bg;
+}
+
+a,
+a:hover,
+a:active {
+	text-decoration: none;
+	color: inherit;
+}
+a[href*="mailto:"]{
+	word-wrap: anywhere;
+}
+
+button,
+button:hover,
+button:focus,
+button:active {
+	outline: none;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+/* Reset Extra Large Device Container Width Style */
+.container{
+	@include min-desktop-lg{
+		max-width: 1250px;
+	}
+}
+
+.form-control{
+	&:focus{
+		text-shadow: none;
+	}
+	&::placeholder{
+		color: currentColor;
+	}
+}
+
+/* Common Slick Slider Style */
+.slick{
+	&__arrows{
+		width: toRem(50);
+		height: toRem(50);
+		position: absolute;
+		color: $color-white;
+		background: $color-secondary;
+		font-size: 1rem;
+		cursor: pointer;
+		z-index: 2;
+		@extend %transition;
+		@include min-desktop{
+			width: toRem(70);
+			height: toRem(70);
+		}
+		// &--left{
+		// 	left: 41vw;
+		// 	transform: translate(-50%, 0);
+		// }
+		// &--right{
+		// 	right: 41vw;
+		// 	transform: translate(50%, 0);
+		// }
+		&:hover,
+		&:focus{
+			color: $color-secondary;
+			background-color: $color-primary !important;
+		}
+	}
+	&-dots{
+		position: relative;
+		display: flex;
+		justify-content: center;
+		margin-bottom: 0;
+		line-height: 0;
+		li{
+			&:not(:last-child){
+				margin-right: 1rem;
+			}
+			button{
+				font-size: 0;
+				width: toRem(10);
+				height: toRem(10);
+				background-color: $color-primary;
+				border-radius: 50%;
+				border: 1px solid $color-primary;
+				opacity: 1;
+			}
+			&.slick-active{
+				button{
+					transform: scale(1.5);
+					background-color: transparent;
+				}
+			}
+		}
+	}
+}
+
+/* Common XZoom Style */
+.xzoom{
+	&-preview,
+	&-source{
+		z-index: 9999;
+	}
+	&-preview,
+	&-lens{
+		box-shadow: none;
+	}
+	&-thumbs{
+		.slick-slide{
+			padding: 0 5px;
+		}
+	}
+	&-gallery{
+		margin-right: 0;
+	}
+}
+.xzoom,
+.xzoom2,
+.xzoom3{
+	border: 1px solid $color-gray;
+}
+
+/* Veno Box Style */
+.vbox{
+	&-close{
+		top: 2%;
+		right: 2%;
+		width: 4rem;
+		height: 4rem;
+		border-radius: 50%;
+		padding: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 3rem;
+		color: $color-white !important;
+		@extend %transition;
+		@include tablet{
+			width: 3rem;
+			height: 3rem;
+			font-size: 2rem;
+		}
+		&:hover,
+		&:focus{
+			color: currentColor !important;
+		}
+	}
+	&-next,
+	&-prev{
+		width: 3rem;
+		height: 3rem;
+		span{
+			width: 2rem;
+			height: 2rem;
+			border-width: 4px;
+			border-top-color: $color-primary !important;
+			border-right-color: $color-primary !important;
+		}
+	}
+}
+
+/* Scroll To Top Button Style */
+.scroll-top{
+	bottom: 3%;
+	right: 1%;
+	display: none;
+	cursor: pointer;
+	z-index: 7;
+	@include mobile{
+		bottom: 2%;
+	}
+	&__btn{
+		width: 2.8rem;
+		height: 2.8rem;
+		font-size: 1.2rem;
+		color: $color-white;
+		background: $color-primary;
+	}
+}
+
+/* Common Section Gap Style */
+.section-gap{
+	padding: 5rem 0;
+	@include desktop{
+		padding: 3rem 0;
+	}
+}
+
+
+/* Common Section Heading Style */
+.section-header{
+	margin-bottom: toRem(40);
+	&__title{
+		color: $color-secondary;
+		font-size: toRem(50);
+		@include mobile{
+			font-size: toRem(26);
+		}
+	}
+	&__text{
+		font-weight: 400;
+		@include min-desktop{
+			font-size: 1.1rem;
+			width: 60%;
+		}
+	}
+}
+
+/* Common Social Media Icons Style */
+.social{
+	&__items:not(:last-child){
+		margin-right: toRem(10);
+	}
+	&__link{
+		font-size: toRem(16);
+		padding: toRem(5);
+		@extend %transition;
+		&:hover,
+		&:focus{
+			color: currentColor;
+		}
+	}
+	&--rounded{
+		.social__link{
+			color: $color-white;
+			width: toRem(45);
+			height: toRem(45);
+			background-color: $color-secondary;
+			&:hover,
+			&:focus{
+				color: $color-white;
+				background-color: $color-primary;
+			}
+		}
+	}
+}
+
+
+/* Common Horizontal Line Style */
+.hr{
+	border-color: currentColor;
+	margin: toRem(60) 0;
+}

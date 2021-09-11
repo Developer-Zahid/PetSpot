@@ -1,0 +1,18 @@
+/* Common Button's Style */
+.primary-btn{
+	color: $color-white;
+	font-size: toRem(18);
+	font-weight: 500;
+	font-family: $font-secondary;
+	background-color: $color-secondary;
+	padding: toEm(15) toEm(28);
+	@extend %transition;
+	&:hover,
+	&:focus{
+		color: $color-secondary;
+		background-color: $color-primary;
+	}
+	@include mobile{
+		font-size: toRem(16);
+	}
+}

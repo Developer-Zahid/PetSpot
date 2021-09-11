@@ -1,0 +1,64 @@
+/* Footer Section Style */
+.footer{
+    background-color: $color-footer;
+    &__top{
+        padding: 2rem 0;
+    }
+    &__block{
+        @include desktop{
+            margin-bottom: toRem(30);
+        }
+        &__title{
+            font-size: toRem(24);
+            font-weight: 600;
+        }
+        &__list{
+            &__item:not(:last-child){
+                margin-bottom: toRem(15);
+            }
+            &__icon{
+                color: $color-secondary;
+                font-size: 1.3rem;
+                margin-right: toRem(15);
+            }
+            &__link{
+                padding: toRem(5);
+                @extend %transition;
+                &:hover,
+                &:focus{
+                    color: $color-primary;
+                    text-decoration: underline;
+                }
+            }
+        }
+        &__form{
+            &__btn{
+                color: $color-white;
+                padding: toEm(22);
+                background-color: $color-secondary;
+                @extend %transition;
+                &:hover,
+                &:focus{
+                    background-color: $color-primary;
+                }
+            }
+        }
+    }
+    &__bottom{
+        color: $color-white;
+        background-color: $color-secondary;
+        padding: 1rem 0;
+        &__text{
+            font-size: toRem(14);
+            font-family: $font-secondary;
+        }
+        &__link{
+            @extend %transition;
+            &:hover,
+            &:focus{
+                color: $color-primary;
+                text-decoration: underline;
+            }
+        }
+    }
+}

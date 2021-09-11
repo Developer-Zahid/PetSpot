@@ -1,0 +1,56 @@
+/* Banner Section Style */
+.banner{
+    &__slide{
+        background-color: rgba($color-secondary, $alpha: 0.1);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-blend-mode: overlay;
+        color: $color-white;
+        padding: 7rem 0;
+        text-shadow: 0 0 10px rgba($color-secondary, $alpha: 0.2);
+        @include tablet{
+            background-color: rgba($color-secondary, $alpha: 0.2);
+        }
+    }
+    &__title{
+        font-size: 3rem;
+        @include tablet{
+            font-size: 2rem;
+        }
+        @include mobile{
+            font-size: 1.8rem;
+        }
+        .second-line{
+            font-size: 0.8em;
+        }
+    }
+    &__sub-title{
+        color: $color-primary;
+    }
+    &__text{
+        font-size: 1.2rem;
+    }
+    .slick{
+        &__arrows{
+            bottom: 0;
+            background-color: $color-black;
+            &--left{
+                right: toRem(50);
+                @include min-desktop{
+                   right: toRem(70);
+                }
+            }
+            &--right{
+                right: 0;
+                transform: translateX(0);
+            }
+        }
+        &-dots{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            transform: translateY(-300%);
+        }
+    }
+}

@@ -1,0 +1,108 @@
+/* Products Section Style */
+.products{
+    &__card{
+        &__image{
+            border-radius: $radius;
+            @extend %transition;
+        }
+        &__badge{
+            top: 10px;
+            color: $color-white;
+            background-color: $color-secondary;
+            font-size: toRem(14);
+            font-weight: 600;
+            font-family: $font-secondary;
+            padding: 0.5rem 1rem;
+            &--new{
+                right: 0;
+                transform: translateX(10%);
+            }
+            &--sold,
+            &--sale{
+                left: 0;
+                transform: translateX(-10%);
+            }
+            &--sold{
+                color: $color-white;
+                background-color: $color-primary;
+            }
+            &--sale{
+                color: $color-secondary;
+                background-color: darken($color-gray, $amount: 5);
+            }
+        }
+        &__btn{
+            transform: translateY(20%);
+            opacity: 0;
+        }
+        &__head{
+            &__btn{
+                color: $color-white;
+                background-color: $color-primary;
+                border-radius: $radius / 2 $radius / 2 0 0;
+                opacity: 0;
+                @extend %transition;
+                &:hover,
+                &:focus{
+                    background-color: $color-secondary;
+                }
+            }
+            &__link{
+                &:hover,
+                &:focus{
+                    .products__card__image{
+                        opacity: 0.8;
+                        filter: hue-rotate(90deg);
+                    }
+                }
+            }
+        }
+        &__body{
+            padding: 1rem 0.5rem;
+        }
+        &__title{
+            font-size: toRem(28);
+            font-weight: 600;
+            &__link{
+                @extend %transition;
+                &:hover,
+                &:focus{
+                    color: $color-primary;
+                }
+            }
+        }
+        &__list{
+            margin-bottom: toRem(10);
+        }
+        &__rating{
+            color: $color-primary;
+            font-size: toRem(17);
+            &:not(:last-child){
+                margin-right: 0.25rem;
+            }
+        }
+        &__price{
+            font-size: toRem(20);
+            font-weight: 700;
+            .before-price{
+                color: darken($color-gray, $amount: 20);
+            }
+        }
+        .primary-btn{
+            @include mobile-to-desktop{
+                font-size: toRem(14);
+            }
+        }
+        &:hover{
+            .products__card{
+                &__btn{
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+                &__head__btn{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

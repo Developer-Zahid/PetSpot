@@ -1,0 +1,149 @@
+/* Popup Modals Style */
+.modal{
+    .close{
+        font-size: 2rem;
+    }
+    &-body{
+        &__title{
+            font-weight: 600;
+        }
+        &__text{
+            color: $color-gray-deep;
+        }
+        &__rating{
+            color: $color-primary;
+            &:not(:last-child){
+                margin-right: 0.2rem;
+            }
+        }
+        &__price{
+            font-family: $font-secondary;
+            font-size: toRem(18);
+            font-weight: 500;
+            .before-price{
+                color: darken($color-gray, $amount: 20);
+            }
+        }
+        &__sub-title{
+            color: $color-secondary;
+            font-size: toRem(17);
+            font-weight: 600;
+            @include mobile{
+                font-size: toRem(14);
+            }
+        }
+        &__color{
+            &-list{
+                gap: toRem(10);
+                .xzoom-gallery,
+                .xzoom-gallery2,
+                .xzoom-gallery3{
+                    max-width: toRem(60);
+                    @extend %transition;
+                }
+            }
+            &-item{
+                &.active,
+                &:hover{
+                    .xzoom-gallery,
+                    .xzoom-gallery2,
+                    .xzoom-gallery3{
+                        border-color: $color-primary;
+                    }
+                }
+            }
+        }
+        .input-spinner{
+            max-width: 8rem;
+            .input-group{
+                flex-direction: row-reverse;
+                font-family: $font-secondary;
+                .btn{
+                    color: $color-white;
+                    background-color: $color-secondary;
+                    border-color: $color-secondary;
+                    &:hover{
+                        background-color: $color-primary;
+                        border-color: $color-primary;
+                    }
+                }
+                > .form-control:focus{
+                    z-index: 1;
+                }
+            }
+            &__input{
+                font-weight: 500;
+                box-shadow: none;
+                border-color: $color-gray;
+            }
+        }
+        .primary-btn{
+            font-size: toRem(14);
+        }
+        .divider{
+            &__text{
+                background-color: $color-white;
+            }
+        }
+    }
+    .xzoom-slider,
+    .choice-slider{
+        .slick{
+            &__arrows{
+                width: toRem(35);
+                height: toRem(35);
+                top: 50%;
+                font-size: toRem(14);
+                &--left{
+                	left: 0;
+                	transform: translate(-50%, -50%);
+                }
+                &--right{
+                	right:0;
+                	transform: translate(50%, -50%);
+                }
+            }
+        }
+    }
+    .xzoom-slide,
+    .choice-slide{
+        &__wrapper{
+            &::after{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba($color-primary, $alpha: 0.5);
+                pointer-events: none;
+                opacity: 0;
+                @extend %transition;
+            } 
+        }
+        &:hover{
+            .xzoom-slide__wrapper,
+            .choice-slide__wrapper{
+                &::after{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .xzoom-slider{
+        margin-top: 1rem;
+    }
+
+    .choice-slide{
+        padding: 0 5px;
+        &__wrapper{
+            border: 1px solid $color-gray;
+        }
+    }
+}
+#size-guide-modal{
+    .modal-dialog{
+        background-color: rgba($color-black, $alpha: 0.7);
+    }
+}

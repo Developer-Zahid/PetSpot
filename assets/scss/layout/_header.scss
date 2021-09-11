@@ -1,0 +1,275 @@
+/* Header Section Style */
+.header{
+	position: absolute;
+	top: 0;
+	z-index: 9;
+	background-color: $color-secondary;
+	box-shadow: 0 3px 18px rgba($color-black, $alpha: 0.12);
+	.navbar{
+		&-brand{
+			@include desktop{
+				transform: translateX(-30%);
+			}
+			@include mobile{
+				img{
+					max-width: 4.5rem;
+				}
+			}
+		}
+		&-toggler{
+			font-size: 2rem;
+			color: $color-white;
+			z-index: 8;
+			@extend %transition;
+			&.hide,
+			&:hover{
+				color: $color-primary;
+			}
+		}
+		&-collapse{
+			@include desktop{
+				position: fixed;
+				top: 0;
+				right: 0;
+				transform: translateX(100%);
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				width: 50%;
+				height: 100vh;
+				background-color: lighten($color-black, $amount: 8);
+				transition: transform ease-in-out .3s;
+				&.show{
+					transform: translateX(0);
+				}
+				.navbar-nav{
+					width: 100%;
+					margin-top: toRem(20);
+				}
+			}
+			@include tablet{
+				width: 100%;
+			}
+		}
+		&__top{
+			@include desktop{
+				flex-wrap: wrap;
+			}
+			@include min-desktop{
+				border-bottom: 1px solid rgba($color-gray, $alpha: 0.17);
+			}
+			&__form{
+				@include desktop{
+					order: 2;
+				}
+				@include min-desktop{
+					max-width: 35rem;
+				}
+				@include min-desktop-lg{
+					max-width: 45rem;
+				}
+				&-btn{
+					width: toRem(55);
+					height: toRem(55);
+					color: $color-secondary;
+					background-color: $color-primary;
+					@extend %transition;
+					@include min-mobile{
+						font-size: 1.3rem;
+					}
+					&:hover,
+					&:focus{
+						color: $color-white;
+					}
+				}
+			}
+			&__nav{
+				@include desktop{
+					order: -1;
+				}
+				&__link{
+					color: $color-white;
+					font-size: toRem(24);
+					@extend %transition;
+					@include desktop{
+						padding-right: 1.5rem;;
+					}
+					@include mobile{
+						font-size: toRem(20);
+					}
+					@include min-desktop{
+						padding-left: 1.5rem;;
+					}
+					&__notification{
+						top: 0;
+						right: 50%;
+						transform: translate(80%, -24%);
+						@include min-desktop{
+							right: 0;
+						}
+						color: $color-secondary;
+						font-size: toRem(14);
+						font-weight: 500;
+						font-family: $font-secondary;
+						width: toRem(22);
+						height: toRem(22);
+						background-color: $color-primary;
+						@extend %transition;
+					}
+					&:hover,
+					&:focus{
+						color: $color-primary;
+						.navbar__top__nav__link__notification{
+							background-color: $color-white;
+						}
+					}
+				}
+			}
+		}
+		.nav{
+			&-item{
+				.dropdown{
+					&-toggle{
+						&::after{
+							content: "\f078";
+							font-family: "Font Awesome 5 Free";
+							font-weight: 900;
+							border: 0;
+							line-height: 1;
+							vertical-align: middle;
+							font-size: 0.8rem;
+						}
+					}
+					&-menu{
+						min-width: toRem(190);
+						@extend %transition;
+						@include min-desktop{
+							display: block;
+							transform: translateY(40%);
+							opacity: 0;
+							visibility: hidden;
+							box-shadow: 0 5px 15px rgba($color-black, $alpha: 0.1);
+						}
+					}
+					&-item{
+						color: $color-secondary;
+						@extend %transition;
+						&::before{
+							content: "";
+							width: 0;
+							height: 2px;
+							background-color: $color-primary;
+							display: inline-block;
+							margin-right: 0;
+							vertical-align: super;
+							@extend %transition;
+						}
+						&.active,
+						&:active,
+						&:hover,
+						&:focus{
+							color: $color-primary;
+							background-color: transparent;
+							&::before{
+								width: 10px;
+								margin-right: 0.5rem;
+							}
+						}
+					}
+				}
+				&.dropdown{
+					@include min-desktop{
+						&::before{
+							content: "";
+							position: absolute;
+							left: 0;
+							bottom: 0;
+							transform: translateY(100%);
+							width: 100%;
+							height: 100%;
+							cursor: pointer;
+							pointer-events: none;
+						}
+						&:hover,
+						&:focus{
+							&::before{
+								pointer-events: all;
+							}
+							.dropdown{
+								&-toggle{
+									color: $color-primary;
+								}
+								&-menu{
+									transform: translateY(0);
+									opacity: 1;
+									visibility: visible;
+								}
+							}
+						}
+					}
+				}
+			}
+			&-link{
+				color: $color-white;
+				font-size: 1rem;
+				font-weight: 400;
+				padding: 1.2rem toRem(15);
+				@extend %transition;
+				&.active,
+				&:hover,
+				&:focus-visible{
+					color: $color-primary;
+				}
+				@include min-desktop{
+					&:hover,
+					&:focus{
+						+ .dropdown-menu{
+							transform: translateY(0);
+							opacity: 1;
+							visibility: visible;
+						}
+					}
+				}
+			}
+		}
+	}
+	&--fixed{
+		position: fixed;
+		transform: translateY(-100%);
+		animation: header_in .4s linear forwards;
+		.navbar-brand img{
+			max-width: 4.5rem;
+		}
+	}
+}
+/* Fixed Header animation */
+@keyframes header_in{
+	0%{
+		transform: translateY(-100%);
+	}
+	100%{
+		transform: translateY(0);
+	}
+}
+
+/* Off Canvas Navbar Toggler */
+.offCanvasMenuCloser{
+	top: 0;
+	left: 0;
+	transform: translateX(100%);
+	width: 100%;
+	height: 100%;
+	background: rgba($color-black, $alpha: 0.5);
+	z-index: 8;
+	opacity: 0;
+	transition: opacity .4s ease .4s;
+	display: none;
+	&.show{
+		transform: translateX(0);
+		opacity: 1;
+	}
+	@include tablet-to-desktop-lg{
+		display: block;
+	}
+}

@@ -1,0 +1,11 @@
+/* Common Transition Style */
+%transition{
+    transition: all linear .3s;
+}
+
+/* Common Background Style */
+%cover-bg{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

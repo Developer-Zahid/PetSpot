@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Site Title -->
+	<title>PetSpot</title>
+	<!-- Favicon Link -->
+	<link rel="icon" type="image/png" sizes="512x512" href="./assets/images/favicon/android-chrome-512x512.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="./assets/images/favicon/android-chrome-192x192.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+	<link rel="icon" type="image/x-icon" href="./assets/images/favicon/favicon.ico">
+	<!-- All CSS -->
+	<link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/plugins/fontawesome/css/all.min.css">
+	<link rel="stylesheet" href="./assets/plugins/slick-slider/css/slick.css">
+	<link rel="stylesheet" href="./assets/plugins/xzoom/css/xzoom.css">
+	<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+	<!-- Preloader Section -->
+	<!-- <div class="preloader position-fixed bg-white w-100 h-100">
+		<div class="d-flex align-items-center justify-content-center w-100 h-100">
+			<img src="./assets/images/preloader/pre.gif" alt="Preloader Image" class="preloader__image img-fluid">
+		</div>
+	</div> -->
+
+	<!-- Header Section -->
+	<header class="header w-100">
+		<nav class="navbar navbar-expand-lg py-lg-0">
+			<div class="container flex-wrap">
+				<div class="navbar__top d-flex align-items-center justify-content-between w-100">
+					<a class="navbar-brand mr-0" href="./index.html">
+						<img src="./assets/images/logo/logo.png" alt="Logo Image" class="img-fluid">
+					</a>
+					<form class="navbar__top__form form-inline flex-nowrap align-items-stretch position-relative w-100">
+						<input class="form-control d-flex shadow-none border-0 rounded-0 h-auto w-100" type="search" placeholder="Search from over 5,000 products" aria-label="Search">
+						<button class="navbar__top__form-btn d-flex align-items-center justify-content-center border-0 rounded-0 p-1" type="submit"><i class="fas fa-search"></i></button>
+					</form>
+					<ul class="navbar__top__nav nav">
+						<li class="navbar__top__nav__item nav-item">
+							<a class="navbar__top__nav__link d-inline-block position-relative" href="./wishlist.html">
+								<i class="fas fa-heart"></i>
+								<span class="navbar__top__nav__link__notification position-absolute rounded-circle d-inline-flex align-items-center justify-content-center">0</span>
+							</a>
+						</li>
+						<li class="navbar__top__nav__item nav-item">
+							<a class="navbar__top__nav__link d-inline-block position-relative" href="./cart.html">
+								<i class="fas fa-cart-plus"></i>
+								<span class="navbar__top__nav__link__notification position-absolute rounded-circle d-inline-flex align-items-center justify-content-center">0</span>
+							</a>
+						</li>
+					</ul>
+					<button class="navbar-toggler pr-0 position-relative" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<i class="fas fa-bars"></i>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav text-center mx-auto">
+						<li class="nav-item">
+							<a class="nav-link text-uppercase active" href="./index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-uppercase" href="#">About Us</a>
+						</li>
+						<li class="nav-item dropdown position-relative">
+							<button class="nav-link text-uppercase dropdown-toggle border-0 bg-transparent w-100" id="navbarDropdown" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Products
+							</button>
+							<div class="dropdown-menu text-center text-lg-left border-0 rounded-0 mx-auto mt-0" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item position-relative" href="#">Leash</a>
+								<a class="dropdown-item position-relative" href="#">Collar</a>
+								<a class="dropdown-item position-relative" href="#">Harness</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-uppercase" href="#">Cart</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-uppercase" href="#">Blog</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-uppercase" href="#">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- Off Canvas Menu Toggler -->
+	<div class="offCanvasMenuCloser position-fixed" data-toggle="collapse" data-target="#navbarSupportedContent" role="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></div>
+
+	<!-- Banner Section -->
+	<section class="banner">
+		<div class="banner__slider">
+			<div class="banner__slide" style="background-image: url(./assets/images/banner/banner-1.png);">
+				<div class="container">
+					<div class="row justify-content-center justify-content-lg-start">
+						<div class="col-xl-8 col-md-10 text-center text-lg-left">
+							<h3 class="banner__sub-title">Welcome To PetSpot!</h3>
+							<h1 class="banner__title font-weight-bold">
+								<span class="first-line d-block">Everything Your Pet Desires</span>
+								<span class="second-line">Spoil Your Furry Friend!</span>
+							</h1>
+							<p class="banner__text my-4 pr-md-5 mr-md-5">Say hi to PetSpot, your new online pal packed with all the elements your website can ever possibly need</p>
+							<a href="#!" class="primary-btn d-inline-block text-uppercase rounded-pill">Shop Now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="banner__slide" style="background-image: url(./assets/images/banner/banner-2.jpg);">
+				<div class="container">
+					<div class="row justify-content-center justify-content-lg-start">
+						<div class="col-xl-8 col-md-10 text-center text-lg-left">
+							<h3 class="banner__sub-title">Big Sale 50% Off</h3>
+							<h1 class="banner__title font-weight-bold">
+								<span class="first-line d-block">Best Organic Products For</span>
+								<span class="second-line">Pomeranian Puppy</span>
+							</h1>
+							<p class="banner__text my-4 pr-md-5 mr-md-5">Say hi to PetSpot, your new online pal packed with all the elements your website can ever possibly need</p>
+							<a href="#!" class="primary-btn d-inline-block text-uppercase rounded-pill">Shop Now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="banner__slide" style="background-image: url(./assets/images/banner/banner-3.jpg);">
+				<div class="container">
+					<div class="row justify-content-center justify-content-lg-start">
+						<div class="col-xl-8 col-md-10 text-center text-lg-left">
+							<h3 class="banner__sub-title">Welcome To PetSpot!</h3>
+							<h1 class="banner__title font-weight-bold">
+								<span class="first-line d-block">Everything Your Pet Desires</span>
+								<span class="second-line">Spoil Your Furry Friend!</span>
+							</h1>
+							<p class="banner__text my-4 pr-md-5 mr-md-5">Say hi to PetSpot, your new online pal packed with all the elements your website can ever possibly need</p>
+							<a href="#!" class="primary-btn d-inline-block text-uppercase rounded-pill">Shop Now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="banner__slide" style="background-image: url(./assets/images/banner/banner-4.jpg);">
+				<div class="container">
+					<div class="row justify-content-center justify-content-lg-start">
+						<div class="col-xl-8 col-md-10 text-center text-lg-left">
+							<h3 class="banner__sub-title">Welcome To PetSpot!</h3>
+							<h1 class="banner__title font-weight-bold">
+								<span class="first-line d-block">Everything Your Pet Desires</span>
+								<span class="second-line">Spoil Your Furry Friend!</span>
+							</h1>
+							<p class="banner__text my-4 pr-md-5 mr-md-5">Say hi to PetSpot, your new online pal packed with all the elements your website can ever possibly need</p>
+							<a href="#!" class="primary-btn d-inline-block text-uppercase rounded-pill">Shop Now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Popular Products Section -->
+	<section class="products section-gap">
+		<div class="container">
+			<div class="row">
+				<div class="section-header text-center col-12">
+					<h1 class="section-header__title font-weight-bold">Popular Products</h1>
+					<p class="section-header__text mx-auto">Lorem ipsum dolor sit amet, est vide voluptaria ex, nec in hinc solum sat. Neceessitatibus sonet soluta, vim eu esse accusamus. </p>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="products__card">
+						<div class="products__card__head d-flex align-items-center justify-content-center position-relative">
+							<a href="./collar.html" class="products__card__head__link">
+								<img src="./assets/images/products/category-A/product-1.jpg" alt="Product Image" class="products__card__image w-100">
+							</a>
+							<span class="products__card__badge products__card__badge--new position-absolute text-uppercase">New</span>
+							<button class="primary-btn products__card__btn border-0 position-absolute">Add to cart</button>
+							<ul class="products__card__head__list nav position-absolute align-self-end">
+								<li class="products__card__head__list__item nav-item mr-1">
+									<button class="products__card__head__btn nav-link border-0">
+										<i class="fas fa-heart"></i>
+									</button>
+								</li>
+								<li class="products__card__head__list__item nav-item">
+									<button class="products__card__head__btn nav-link border-0" data-toggle="modal" data-target="#collar-popup-modal">
+										<i class="fas fa-eye"></i>
+									</button>
+								</li>
+							</ul>
+						</div>
+						<div class="products__card__body text-center">
+							<h3 class="products__card__title">
+								<a href="./collar.html" class="products__card__title__link d-inline-block">Spotcollar</a>
+							</h3>
+							<ul class="products__card__list d-flex align-items-center justify-content-center">
+								<li class="products__card__rating">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="products__card__rating">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="products__card__rating">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="products__card__rating">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="products__card__rating">
+									<i class="fas fa-star-half-alt"></i>
+								</li>
+							</ul>
+							<p class="products__card__price mb-0">$44.00</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="products__card">
+						<div class="products__card__head d-flex align-items-center justify-content-center position-relative">
+							<a href="./harness.html" class="products__card__head__link">
+								<img src="./assets/images/products/category-B/product-1.jpg" alt="Product Image" class="products__card__image w-100">
+							</a>
+							<span class="products__card__badge products__card__badge--sale position-absolute text-uppercase">Sale</span>
+							<button class="primary-btn products__card__btn border-0 position-absolute">Add to cart</button>
+							<ul class="products__card__head__list nav position-absolute align-self-end">
+								<li class="products__card__head__list__item nav-item mr-1">
+									<button class="products__card__head__btn nav-link border-0">
+										<i class="fas fa-heart"></i>
+									</button>
+								</li>
+								<li class="products__card__head__list__item nav-item">
+									<button class="products__card__head__btn nav-link border-0" data-toggle="modal" data-target="#harness-popup-modal">
+										<i class="fas fa-eye"></i>
+									</button>
+								</li>
+							</ul>
+						</div>
+						<div class="products__card__body text-center">
+							<h3 class="products__card__title">
+								<a href="./harness.html" class="products__card__title__link d-inline-block">Spotharness</a>
+							</h3>
+							<ul class="products__card__list d-flex align-items-center justify-content-center">
+								<li class="products__card__rating">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="products__card__rating">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="products__card__rating">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="products__card__rating">
+									<i class="fas fa-star-half-alt"></i>
+								</li>
+								<li class="products__card__rating">
+									<i class="far fa-star"></i>
+								</li>
+							</ul>
+							<p class="products__card__price mb-0">
+								<del class="before-price pr-2">$12.33</del>$9.25
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 col-sm-6">
+					<div class="products__card">
+						<div class="products__card__head d-flex align-items-center justify-content-center position-relative">
+							<a href="./leash.html" class="products__card__head__link">
+								<img src="./assets/images/products/category-C/product-1.png" alt="Product Image" class="products__card__image w-100">
+							</a>
+							<span class="products__card__badge products__card__badge--sold position-absolute text-uppercase">Sold</span>
+							<a href="./leash.html" class="primary-btn products__card__btn border-0 position-absolute">Read more</a>
+							<ul class="products__card__head__list nav position-absolute align-self-end">
+								<li class="products__card__head__list__item nav-item mr-1">
+									<button class="products__card__head__btn nav-link border-0">
+										<i class="fas fa-heart"></i>
+									</button>
+								</li>
+								<li class="products__card__head__list__item nav-item">
+									<button class="products__card__head__btn nav-link border-0" data-toggle="modal" data-target="#leash-popup-modal">
+										<i class="fas fa-eye"></i>
+									</button>
+								</li>
+							</ul>
+						</div>
+						<div class="products__card__body text-center">
+							<h3 class="products__card__title">
+								<a href="./leash.html" class="products__card__title__link d-inline-block">Spotleash</a>
+							</h3>
+							<ul class="products__card__list d-flex align-items-center justify-content-center">
+								<li class="products__card__rating">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="products__card__rating">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="products__card__rating">
+									<i class="fas fa-star"></i>
+								</li>
+								<li class="products__card__rating">
+									<i class="far fa-star"></i>
+								</li>
+								<li class="products__card__rating">
+									<i class="far fa-star"></i>
+								</li>
+							</ul>
+							<p class="products__card__price mb-0">$15</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Collar Popup Modal -->
+	<div class="modal fade" id="collar-popup-modal" tabindex="-1" aria-labelledby="collar-popup-modal-label" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+			<div class="modal-content rounded-0">
+				<div class="modal-header border-0 py-0">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body px-3">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-lg-5 mb-4 mb-lg-0">
+								<div class="w-100">
+									<img src="./assets/images/products/category-A/product-1.jpg" xoriginal="./assets/images/products/category-A/product-1.jpg" alt="Product Image" class="xzoom shadow-none w-100">
+								</div>
+								<div class="xzoom-thumbs xzoom-slider slick-slider">
+									<div class="xzoom-slide slick-slide">
+										<a href="./assets/images/products/category-A/product-1.jpg" class="xzoom-slide__wrapper d-inline-block position-relative">
+											<img class="xzoom-gallery w-100" src="./assets/images/products/category-A/product-1.jpg" alt="Product Image" xpreview="./assets/images/products/category-A/product-1.jpg">
+										</a>
+									</div>
+									<div class="xzoom-slide slick-slide">
+										<a href="./assets/images/products/category-A/product-2.jpg" class="xzoom-slide__wrapper d-inline-block position-relative">
+											<img class="xzoom-gallery w-100" src="./assets/images/products/category-A/product-2.jpg" alt="Product Image">
+										</a>
+									</div>
+									<div class="xzoom-slide slick-slide">
+										<a href="./assets/images/products/category-A/product-3.png" class="xzoom-slide__wrapper d-inline-block position-relative">
+											<img class="xzoom-gallery w-100" src="./assets/images/products/category-A/product-3.png" alt="Product Image">
+										</a>
+									</div>
+									<div class="xzoom-slide slick-slide">
+										<a href="./assets/images/products/category-A/product-4.png" class="xzoom-slide__wrapper d-inline-block position-relative">
+											<img class="xzoom-gallery w-100" src="./assets/images/products/category-A/product-4.png" alt="Product Image">
+										</a>
+									</div>
+									<div class="xzoom-slide slick-slide">
+										<a href="./assets/images/products/category-A/product-5.png" class="xzoom-slide__wrapper d-inline-block position-relative">
+											<img class="xzoom-gallery w-100" src="./assets/images/products/category-A/product-5.png" alt="Product Image">
+										</a>
+									</div>
+									<div class="xzoom-slide slick-slide">
+										<a href="./assets/images/products/category-A/product-preview.jpg" class="xzoom-slide__wrapper d-inline-block position-relative">
+											<img class="xzoom-gallery w-100" src="./assets/images/products/category-A/product-preview.jpg" alt="Product Image">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-7">
+								<h3 class="modal-body__title">Waterproof Dog Cat Collar</h3>
+								<p class="modal-body__text mb-1">Waterproof IPX8 GPS Dog Cat Collar GPS/WIFI Location Tracker Anti Lost Animal Pet Collar</p>
+								<ul class="modal-body__list d-flex align-items-center mb-1">
+									<li class="modal-body__rating">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="modal-body__rating">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="modal-body__rating">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="modal-body__rating">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="modal-body__rating">
+										<i class="fas fa-star-half-alt"></i>
+									</li>
+								</ul>
+								<p class="modal-body__price mb-1">$44.00</p>
+								<p class="modal-body__text mb-1"><span class="modal-body__sub-title mr-2">Color:</span> choose a color from images below</p>
+								<ul class="modal-body__color-list xzoom-thumbs d-flex flex-wrap mb-3">
+									<li class="modal-body__color-item active">
+										<a href="./assets/images/products/category-A/product-1.jpg">
+											<img class="xzoom-gallery w-100" src="./assets/images/products/category-A/product-1.jpg" alt="Product Image" xpreview="./assets/images/products/category-A/product-1.jpg">
+										</a>
+									</li>
+									<li class="modal-body__color-item">
+										<a href="./assets/images/products/category-A/product-2.jpg">
+											<img class="xzoom-gallery w-100" src="./assets/images/products/category-A/product-2.jpg" alt="Product Image">
+										</a>
+									</li>
+									<li class="modal-body__color-item">
+										<a href="./assets/images/products/category-A/product-3.png">
+											<img class="xzoom-gallery w-100" src="./assets/images/products/category-A/product-3.png" alt="Product Image">
+										</a>
+									</li>
+									<li class="modal-body__color-item">
+										<a href="./assets/images/products/category-A/product-4.png">
+											<img class="xzoom-gallery w-100" src="./assets/images/products/category-A/product-4.png" alt="Product Image">
+										</a>
+									</li>
+									<li class="modal-body__color-item">
+										<a href="./assets/images/products/category-A/product-5.png">
+											<img class="xzoom-gallery w-100" src="./assets/images/products/category-A/product-5.png" alt="Product Image">
+										</a>
+									</li>
+								</ul>
+								<p class="modal-body__text mb-1"><span class="modal-body__sub-title mr-2">Quantity:</span></p>
+								<div class="d-flex flex-wrap mb-3">
+									<div class="input-spinner mb-3 mb-sm-0 mr-3">
+										<input class="input-spinner__input p-0" type="number" value="0" min="0" step="1">
+									</div>
+									<button class="primary-btn border-0 py-sm-0" data-toggle="modal" data-target="#size-guide-modal">
+										<i class="fas fa-ruler mr-2"></i>
+										Size guide
+									</button>
+								</div>
+								<div class="d-flex flex-wrap mb-3">
+									<button class="primary-btn border-0 mb-3 mb-sm-0 mr-3">Add to cart</button>
+									<a href="./collar.html" class="primary-btn border-0">View more details</a>
+								</div>
+							</div>
+							<div class="col-12">
+								<h4 class="divider d-flex align-items-center justify-content-center position-relative my-4">
+									<hr class="position-absolute my-0 w-100">
+									<span class="divider__text position-relative px-3">You'll Also Love</span>
+								</h4>
+								<div class="choice-slider slick-slider">
+									<a href="./harness.html" class="choice-slide slick-slide">
+										<div class="choice-slide__wrapper position-relative">
+											<img src="./assets/images/products/category-B/product-2.jpg" alt="Product Image" class="w-100">
+										</div>
+									</a>
+									<a href="./collar.html" class="choice-slide slick-slide">
+										<div class="choice-slide__wrapper position-relative">
+											<img src="./assets/images/products/category-A/product-3.png" alt="Product Image" class="w-100">
+										</div>
+									</a>
+									<a href="./leash.html" class="choice-slide slick-slide">
+										<div class="choice-slide__wrapper position-relative">
+											<img src="./assets/images/products/category-C/product-1.png" alt="Product Image" class="w-100">
+										</div>
+									</a>
+									<a href="./harness.html" class="choice-slide slick-slide">
+										<div class="choice-slide__wrapper position-relative">
+											<img src="./assets/images/products/category-B/product-3.jpg" alt="Product Image" class="w-100">
+										</div>
+									</a>
+									<a href="./leash.html" class="choice-slide slick-slide">
+										<div class="choice-slide__wrapper position-relative">
+											<img src="./assets/images/products/category-C/product-2.png" alt="Product Image" class="w-100">
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Harness Products Popup Modal -->
+	<div class="modal fade" id="harness-popup-modal" tabindex="-1" aria-labelledby="harness-popup-modal-label" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+			<div class="modal-content rounded-0">
+				<div class="modal-header border-0 py-0">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body px-3">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-lg-5 mb-4 mb-lg-0">
+								<div class="w-100">
+									<img src="./assets/images/products/category-B/product-sm-1.png" xoriginal="./assets/images/products/category-B/product-1.jpg" alt="Product Image" class="xzoom2 shadow-none w-100">
+								</div>
+								<div class="xzoom-thumbs xzoom-slider slick-slider">
+									<div class="xzoom-slide slick-slide">
+										<a href="./assets/images/products/category-B/product-1.jpg" class="xzoom-slide__wrapper d-inline-block position-relative">
+											<img class="xzoom-gallery2 w-100" src="./assets/images/products/category-B/product-sm-1.png" alt="Product Image" xpreview="./assets/images/products/category-B/product-sm-1.png">
+										</a>
+									</div>
+									<div class="xzoom-slide slick-slide">
+										<a href="./assets/images/products/category-B/product-2.jpg" class="xzoom-slide__wrapper d-inline-block position-relative">
+											<img class="xzoom-gallery2 w-100" src="./assets/images/products/category-B/product-sm-2.png" alt="Product Image">
+										</a>
+									</div>
+									<div class="xzoom-slide slick-slide">
+										<a href="./assets/images/products/category-B/product-3.jpg" class="xzoom-slide__wrapper d-inline-block position-relative">
+											<img class="xzoom-gallery2 w-100" src="./assets/images/products/category-B/product-sm-3.png" alt="Product Image">
+										</a>
+									</div>
+									<div class="xzoom-slide slick-slide">
+										<a href="./assets/images/products/category-B/product-4.jpg" class="xzoom-slide__wrapper d-inline-block position-relative">
+											<img class="xzoom-gallery2 w-100" src="./assets/images/products/category-B/product-sm-4.png" alt="Product Image">
+										</a>
+									</div>
+									<div class="xzoom-slide slick-slide">
+										<a href="./assets/images/products/category-B/product-5.jpg" class="xzoom-slide__wrapper d-inline-block position-relative">
+											<img class="xzoom-gallery2 w-100" src="./assets/images/products/category-B/product-sm-5.png" alt="Product Image">
+										</a>
+									</div>
+									<div class="xzoom-slide slick-slide">
+										<a href="./assets/images/products/category-B/product-6.jpg" class="xzoom-slide__wrapper d-inline-block position-relative">
+											<img class="xzoom-gallery2 w-100" src="./assets/images/products/category-B/product-sm-6.png" alt="Product Image">
+										</a>
+									</div>
+									<div class="xzoom-slide slick-slide">
+										<a href="./assets/images/products/category-B/product-7.jpg" class="xzoom-slide__wrapper d-inline-block position-relative">
+											<img class="xzoom-gallery2 w-100" src="./assets/images/products/category-B/product-sm-7.png" alt="Product Image">
+										</a>
+									</div>
+									<div class="xzoom-slide slick-slide">
+										<a href="./assets/images/products/category-B/product-8.jpg" class="xzoom-slide__wrapper d-inline-block position-relative">
+											<img class="xzoom-gallery2 w-100" src="./assets/images/products/category-B/product-sm-8.png" alt="Product Image">
+										</a>
+									</div>
+									<div class="xzoom-slide slick-slide">
+										<a href="./assets/images/products/category-B/product-9.jpg" class="xzoom-slide__wrapper d-inline-block position-relative">
+											<img class="xzoom-gallery2 w-100" src="./assets/images/products/category-B/product-sm-9.png" alt="Product Image">
+										</a>
+									</div>
+									<div class="xzoom-slide slick-slide">
+										<a href="./assets/images/products/category-B/product-10.jpg" class="xzoom- d-inline-block position-relative">
+											<img class="xzoom-gallery2 w-100" src="./assets/images/products/category-B/product-sm-10.png" alt="Product Image">
+										</a>
+									</div>
+									<div class="xzoom-slide slick-slide">
+										<a href="./assets/images/products/category-B/product-11.jpg" class="xzoom-slide__wrapper d-inline-block position-relative">
+											<img class="xzoom-gallery2 w-100" src="./assets/images/products/category-B/product-sm-11.png" alt="Product Image">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-7">
+								<h3 class="modal-body__title">Personalized Dog Harness</h3>
+								<p class="modal-body__text mb-1">Personalized Dog Harness With Custom Name and Phone Number, Patch Hook, Agility Training, Working Heavy Duty Vest With Removable Pet Name</p>
+								<ul class="modal-body__list d-flex align-items-center mb-1">
+									<li class="modal-body__rating">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="modal-body__rating">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="modal-body__rating">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="modal-body__rating">
+										<i class="fas fa-star-half-alt"></i>
+									</li>
+									<li class="modal-body__rating">
+										<i class="far fa-star"></i>
+									</li>
+								</ul>
+								<p class="modal-body__price mb-1">
+									<del class="before-price pr-2">$12.33</del>$9.25
+								</p>
+								<p class="modal-body__text mb-1"><span class="modal-body__sub-title mr-2">Color:</span> choose a color from images below</p>
+								<ul class="modal-body__color-list xzoom-thumbs d-flex flex-wrap mb-3">
+									<li class="modal-body__color-item active">
+										<a href="./assets/images/products/category-B/product-1.jpg">
+											<img class="xzoom-gallery2 w-100" src="./assets/images/products/category-B/product-sm-1.png" alt="Product Image" xpreview="./assets/images/products/category-B/product-sm-1.png">
+										</a>
+									</li>
+									<li class="modal-body__color-item">
+										<a href="./assets/images/products/category-B/product-2.jpg">
+											<img class="xzoom-gallery2 w-100" src="./assets/images/products/category-B/product-sm-2.png" alt="Product Image">
+										</a>
+									</li>
+									<li class="modal-body__color-item">
+										<a href="./assets/images/products/category-B/product-3.jpg">
+											<img class="xzoom-gallery2 w-100" src="./assets/images/products/category-B/product-sm-3.png" alt="Product Image">
+										</a>
+									</li>
+									<li class="modal-body__color-item">
+										<a href="./assets/images/products/category-B/product-4.jpg">
+											<img class="xzoom-gallery2 w-100" src="./assets/images/products/category-B/product-sm-4.png" alt="Product Image">
+										</a>
+									</li>
+									<li class="modal-body__color-item">
+										<a href="./assets/images/products/category-B/product-5.jpg">
+											<img class="xzoom-gallery2 w-100" src="./assets/images/products/category-B/product-sm-5.png" alt="Product Image">
+										</a>
+									</li>
+									<li class="modal-body__color-item">
+										<a href="./assets/images/products/category-B/product-6.jpg">
+											<img class="xzoom-gallery2 w-100" src="./assets/images/products/category-B/product-sm-6.png" alt="Product Image">
+										</a>
+									</li>
+									<li class="modal-body__color-item">
+										<a href="./assets/images/products/category-B/product-7.jpg">
+											<img class="xzoom-gallery2 w-100" src="./assets/images/products/category-B/product-sm-7.png" alt="Product Image">
+										</a>
+									</li>
+									<li class="modal-body__color-item">
+										<a href="./assets/images/products/category-B/product-8.jpg">
+											<img class="xzoom-gallery2 w-100" src="./assets/images/products/category-B/product-sm-8.png" alt="Product Image">
+										</a>
+									</li>
+									<li class="modal-body__color-item">
+										<a href="./assets/images/products/category-B/product-9.jpg">
+											<img class="xzoom-gallery2 w-100" src="./assets/images/products/category-B/product-sm-9.png" alt="Product Image">
+										</a>
+									</li>
+									<li class="modal-body__color-item">
+										<a href="./assets/images/products/category-B/product-10.jpg">
+											<img class="xzoom-gallery2 w-100" src="./assets/images/products/category-B/product-sm-10.png" alt="Product Image">
+										</a>
+									</li>
+									<li class="modal-body__color-item">
+										<a href="./assets/images/products/category-B/product-11.jpg">
+											<img class="xzoom-gallery2 w-100" src="./assets/images/products/category-B/product-sm-11.png" alt="Product Image">
+										</a>
+									</li>
+								</ul>
+								<p class="modal-body__text mb-1"><span class="modal-body__sub-title mr-2">Quantity:</span></p>
+								<div class="d-flex flex-wrap mb-3">
+									<div class="input-spinner mb-3 mb-sm-0 mr-3">
+										<input class="input-spinner__input p-0" type="number" value="0" min="0" step="1">
+									</div>
+									<button class="primary-btn border-0 py-sm-0" data-toggle="modal" data-target="#size-guide-modal">
+										<i class="fas fa-ruler mr-2"></i>
+										Size guide
+									</button>
+								</div>
+								<div class="d-flex flex-wrap mb-3">
+									<button class="primary-btn border-0 mb-3 mb-sm-0 mr-3">Add to cart</button>
+									<a href="./harness.html" class="primary-btn border-0">View more details</a>
+								</div>
+							</div>
+							<div class="col-12">
+								<h4 class="divider d-flex align-items-center justify-content-center position-relative my-4">
+									<hr class="position-absolute my-0 w-100">
+									<span class="divider__text position-relative px-3">You'll Also Love</span>
+								</h4>
+								<div class="choice-slider slick-slider">
+									<a href="./collar.html" class="choice-slide slick-slide">
+										<div class="choice-slide__wrapper position-relative">
+											<img src="./assets/images/products/category-A/product-3.png" alt="Product Image" class="w-100">
+										</div>
+									</a>
+									<a href="./leash.html" class="choice-slide slick-slide">
+										<div class="choice-slide__wrapper position-relative">
+											<img src="./assets/images/products/category-C/product-1.png" alt="Product Image" class="w-100">
+										</div>
+									</a>
+									<a href="./collar.html" class="choice-slide slick-slide">
+										<div class="choice-slide__wrapper position-relative">
+											<img src="./assets/images/products/category-A/product-1.jpg" alt="Product Image" class="w-100">
+										</div>
+									</a>
+									<a href="./harness.html" class="choice-slide slick-slide">
+										<div class="choice-slide__wrapper position-relative">
+											<img src="./assets/images/products/category-B/product-3.jpg" alt="Product Image" class="w-100">
+										</div>
+									</a>
+									<a href="./leash.html" class="choice-slide slick-slide">
+										<div class="choice-slide__wrapper position-relative">
+											<img src="./assets/images/products/category-C/product-2.png" alt="Product Image" class="w-100">
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Leash Popup Modal -->
+	<div class="modal fade" id="leash-popup-modal" tabindex="-1" aria-labelledby="leash-popup-modal-label" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+			<div class="modal-content rounded-0">
+				<div class="modal-header border-0 py-0">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body px-3">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-lg-5 mb-4 mb-lg-0">
+								<div class="w-100">
+									<img src="./assets/images/products/category-C/product-1.jpg" xoriginal="./assets/images/products/category-C/product-1.jpg" alt="Product Image" class="xzoom3 shadow-none w-100">
+								</div>
+								<div class="xzoom-thumbs xzoom-slider slick-slider">
+									<div class="xzoom-slide slick-slide">
+										<a href="./assets/images/products/category-C/product-1.jpg" class="xzoom-slide__wrapper d-inline-block position-relative">
+											<img class="xzoom-gallery3 w-100" src="./assets/images/products/category-C/product-1.jpg" alt="Product Image" xpreview="./assets/images/products/category-C/product-1.jpg">
+										</a>
+									</div>
+									<div class="xzoom-slide slick-slide">
+										<a href="./assets/images/products/category-C/product-2.jpg" class="xzoom-slide__wrapper d-inline-block position-relative">
+											<img class="xzoom-gallery3 w-100" src="./assets/images/products/category-C/product-2.jpg" alt="Product Image">
+										</a>
+									</div>
+									<div class="xzoom-slide slick-slide">
+										<a href="./assets/images/products/category-C/product-3.jpg" class="xzoom-slide__wrapper d-inline-block position-relative">
+											<img class="xzoom-gallery3 w-100" src="./assets/images/products/category-C/product-3.jpg" alt="Product Image">
+										</a>
+									</div>
+									<div class="xzoom-slide slick-slide">
+										<a href="./assets/images/products/category-C/product-preview-1.jpg" class="xzoom-slide__wrapper d-inline-block position-relative">
+											<img class="xzoom-gallery3 w-100" src="./assets/images/products/category-C/product-preview-1.jpg" alt="Product Image">
+										</a>
+									</div>
+									<div class="xzoom-slide slick-slide">
+										<a href="./assets/images/products/category-C/product-preview-2.png" class="xzoom-slide__wrapper d-inline-block position-relative">
+											<img class="xzoom-gallery3 w-100" src="./assets/images/products/category-C/product-preview-2.png" alt="Product Image">
+										</a>
+									</div>
+									<div class="xzoom-slide slick-slide">
+										<a href="./assets/images/products/category-C/product-preview-3.png" class="xzoom-slide__wrapper d-inline-block position-relative">
+											<img class="xzoom-gallery3 w-100" src="./assets/images/products/category-C/product-preview-3.png" alt="Product Image">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-7">
+								<h3 class="modal-body__title">Nylon Led Light Smart Dog Leash</h3>
+								<p class="modal-body__text mb-1">PETCOME Wholesale Pet Product Nylon Led Light Smart Dog Leash With Waste Bag Dispenser</p>
+								<ul class="modal-body__list d-flex align-items-center mb-1">
+									<li class="modal-body__rating">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="modal-body__rating">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="modal-body__rating">
+										<i class="fas fa-star"></i>
+									</li>
+									<li class="modal-body__rating">
+										<i class="far fa-star"></i>
+									</li>
+									<li class="modal-body__rating">
+										<i class="far fa-star"></i>
+									</li>
+								</ul>
+								<p class="modal-body__price mb-1">$15.00</p>
+								<p class="modal-body__text mb-1"><span class="modal-body__sub-title mr-2">Color:</span> choose a color from images below</p>
+								<ul class="modal-body__color-list xzoom-thumbs d-flex flex-wrap mb-3">
+									<li class="modal-body__color-item active">
+										<a href="./assets/images/products/category-C/product-1.jpg">
+											<img class="xzoom-gallery3 w-100" src="./assets/images/products/category-C/product-1.jpg" alt="Product Image" xpreview="./assets/images/products/category-C/product-1.jpg">
+										</a>
+									</li>
+									<li class="modal-body__color-item">
+										<a href="./assets/images/products/category-C/product-2.jpg">
+											<img class="xzoom-gallery3 w-100" src="./assets/images/products/category-C/product-2.jpg" alt="Product Image">
+										</a>
+									</li>
+									<li class="modal-body__color-item">
+										<a href="./assets/images/products/category-C/product-3.jpg">
+											<img class="xzoom-gallery3 w-100" src="./assets/images/products/category-C/product-3.jpg" alt="Product Image">
+										</a>
+									</li>
+								</ul>
+								<p class="modal-body__text mb-1"><span class="modal-body__sub-title mr-2">Quantity:</span></p>
+								<div class="d-flex flex-wrap mb-3">
+									<div class="input-spinner mb-3 mb-sm-0 mr-3">
+										<input class="input-spinner__input p-0" type="number" value="0" min="0" step="1">
+									</div>
+									<button class="primary-btn border-0 py-sm-0" data-toggle="modal" data-target="#size-guide-modal">
+										<i class="fas fa-ruler mr-2"></i>
+										Size guide
+									</button>
+								</div>
+								<div class="d-flex flex-wrap mb-3">
+									<button class="primary-btn border-0 mb-3 mb-sm-0 mr-3">Add to cart</button>
+									<a href="./leash.html" class="primary-btn border-0">View more details</a>
+								</div>
+							</div>
+							<div class="col-12">
+								<h4 class="divider d-flex align-items-center justify-content-center position-relative my-4">
+									<hr class="position-absolute my-0 w-100">
+									<span class="divider__text position-relative px-3">You'll Also Love</span>
+								</h4>
+								<div class="choice-slider slick-slider">
+									<a href="./harness.html" class="choice-slide slick-slide">
+										<div class="choice-slide__wrapper position-relative">
+											<img src="./assets/images/products/category-B/product-2.jpg" alt="Product Image" class="w-100">
+										</div>
+									</a>
+									<a href="./collar.html" class="choice-slide slick-slide">
+										<div class="choice-slide__wrapper position-relative">
+											<img src="./assets/images/products/category-A/product-3.png" alt="Product Image" class="w-100">
+										</div>
+									</a>
+									<a href="./leash.html" class="choice-slide slick-slide">
+										<div class="choice-slide__wrapper position-relative">
+											<img src="./assets/images/products/category-C/product-1.png" alt="Product Image" class="w-100">
+										</div>
+									</a>
+									<a href="./harness.html" class="choice-slide slick-slide">
+										<div class="choice-slide__wrapper position-relative">
+											<img src="./assets/images/products/category-B/product-3.jpg" alt="Product Image" class="w-100">
+										</div>
+									</a>
+									<a href="./leash.html" class="choice-slide slick-slide">
+										<div class="choice-slide__wrapper position-relative">
+											<img src="./assets/images/products/category-C/product-2.png" alt="Product Image" class="w-100">
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Products Size Guide Modal -->
+	<div class="modal fade" id="size-guide-modal" tabindex="-1" aria-labelledby="size-guide-modal-label" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+			<div class="modal-content rounded-0">
+				<div class="modal-header border-0 py-0">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body px-3">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-12">
+								<img src="./assets/images/products/category-B/product-size-guide.png" alt="Product Size Guide Image" class="w-100">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Our Blogs Section -->
+	<section class="blogs section-gap">
+		<div class="container">
+			<div class="row">
+				<div class="section-header text-center col-12">
+					<h1 class="section-header__title font-weight-bold">Read Our Latest News</h1>
+					<p class="section-header__text mx-auto">Lorem ipsum dolor sit amet, est vide voluptaria ex, nec in hinc solum sat. Neceessitatibus sonet soluta, vim eu esse accusamus. </p>
+				</div>
+				<div class="col-lg-4 col-sm-6 d-flex">
+					<div class="blogs__card d-flex flex-column">
+						<div class="blogs__card__head d-flex align-items-center justify-content-center position-relative">
+							<a href="./blog.html" class="blogs__card__head__link">
+								<img src="./assets/images/blogs/blog-1.jpg" alt="Blogs Image" class="blogs__card__image w-100">
+							</a>
+							<time class="blogs__card__time position-absolute text-uppercase">July 22, 2021</time>
+						</div>
+						<div class="blogs__card__body d-flex flex-column align-items-start flex-grow-1">
+							<h3 class="blogs__card__title">
+								<a href="./blog.html" class="blogs__card__title__link d-inline-block">Understanding The Five Senses of Your Dog</a>
+							</h3>
+							<p class="blogs__card__text">Tone get else be her fur somewhere, the assistant there time the of proportion it as endeavours to and</p>
+							<a href="./blog.html" class="primary-btn d-inline-flex align-items-center text-uppercase mt-auto">Read More <i class="fas fa-caret-right ml-2"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 d-flex">
+					<div class="blogs__card d-flex flex-column">
+						<div class="blogs__card__head d-flex align-items-center justify-content-center position-relative">
+							<a href="./blog.html" class="blogs__card__head__link">
+								<img src="./assets/images/blogs/blog-2.png" alt="Blogs Image" class="blogs__card__image w-100">
+							</a>
+							<time class="blogs__card__time position-absolute text-uppercase">Jun 15, 2021</time>
+						</div>
+						<div class="blogs__card__body d-flex flex-column align-items-start flex-grow-1">
+							<h3 class="blogs__card__title">
+								<a href="./blog.html" class="blogs__card__title__link d-inline-block">7 Surprising Ways that Dogs Show Affection</a>
+							</h3>
+							<p class="blogs__card__text">Te feugiat recteque eloquentiam est. Sed at audire ornatus incorrupte, mel ferri bonorum deserunt te. Accusata postulant mei</p>
+							<a href="./blog.html" class="primary-btn d-inline-flex align-items-center text-uppercase mt-auto">Read More <i class="fas fa-caret-right ml-2"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 d-flex">
+					<div class="blogs__card d-flex flex-column mb-0">
+						<div class="blogs__card__head d-flex align-items-center justify-content-center position-relative">
+							<a href="./blog.html" class="blogs__card__head__link">
+								<img src="./assets/images/blogs/blog-3.png" alt="Blogs Image" class="blogs__card__image w-100">
+							</a>
+							<time class="blogs__card__time position-absolute text-uppercase">July 22, 2021</time>
+						</div>
+						<div class="blogs__card__body d-flex flex-column align-items-start flex-grow-1">
+							<h3 class="blogs__card__title">
+								<a href="./blog.html" class="blogs__card__title__link d-inline-block">When Canines Compete: Dog Sports</a>
+							</h3>
+							<p class="blogs__card__text">Tone get else be her fur somewhere, the assistant there time the of proportion it as endeavours to and</p>
+							<a href="./blog.html" class="primary-btn d-inline-flex align-items-center text-uppercase mt-auto">Read More <i class="fas fa-caret-right ml-2"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer Section -->
+	<footer class="footer">
+		<div class="footer__top">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-6">
+						<div class="footer__block">
+							<a href="./index.html" class="footer__block__logo d-inline-block">
+								<img src="./assets/images/logo/logo.png" alt="Logo Image" class="img-fluid">
+							</a>
+							<p class="footer__block__text my-3 mr-lg-5">Do  you have a question or concern? Are you looking for something in our  shop? Let us know! We will get back to you as soon as possible with an  answer.</p>
+							<ul class="social social--rounded d-flex mb-0">
+								<li class="social__items">
+									<a href="#!" target="_blank" class="social__link d-inline-flex align-items-center justify-content-center rounded-circle">
+										<i class="fab fa-facebook-f"></i>
+									</a>
+								</li>
+								<li class="social__items">
+									<a href="#!" target="_blank" class="social__link d-inline-flex align-items-center justify-content-center rounded-circle">
+										<i class="fab fa-twitter"></i>
+									</a>
+								</li>
+								<li class="social__items">
+									<a href="#!" target="_blank" class="social__link d-inline-flex align-items-center justify-content-center rounded-circle">
+										<i class="fab fa-linkedin-in"></i>
+									</a>
+								</li>
+								<li class="social__items">
+									<a href="#!" target="_blank" class="social__link d-inline-flex align-items-center justify-content-center rounded-circle">
+										<i class="fab fa-instagram"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6">
+						<div class="footer__block">
+							<h3 class="footer__block__title mb-3">Contact</h3>
+							<ul class="footer__block__list">
+								<li class="footer__block__list__item d-inline-flex align-items-center">
+									<span class="footer__block__list__icon d-inline-block">
+										<i class="fas fa-map-marker-alt"></i>
+									</span>
+									<address class="footer__block__list__address mb-0">
+										184 Main Rd E, St Albans VIC <br>
+										3021, Australia
+									</address>
+								</li>
+								<li class="footer__block__list__item d-flex align-items-center">
+									<span class="footer__block__list__icon d-inline-block">
+										<i class="fas fa-envelope"></i>
+									</span>
+									<div class="d-flex flex-column">
+										<a href="mailto:example@example.com " class="footer__block__list__link">example@example.com</a>
+										<a href="mailto:demo@demo.com " class="footer__block__list__link">demo@demo.com</a>
+									</div>
+								</li>
+								<li class="footer__block__list__item d-flex align-items-center">
+									<span class="footer__block__list__icon d-inline-block">
+										<i class="fas fa-phone-alt"></i>
+									</span>
+									<div class="d-flex flex-column">
+										<a href="tel:+8801992409030" class="footer__block__list__link">(+880) 199 2409 030</a>
+										<a href="tel:+8801913036060" class="footer__block__list__link">(+880) 191 3036 060</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-8">
+						<div class="footer__block mb-0">
+							<h3 class="footer__block__title mb-3">Newsletter Signup</h3>
+							<p class="footer__block__text">Subscribe To Our Newsletter And Get Daily 10% Off Your First Purchase.</p>
+							<form class="footer__block__form form-inline flex-nowrap align-items-stretch position-relative w-100 needs-validation" novalidate>
+								<input class="form-control d-flex shadow-none border-0 rounded-0 h-auto w-100" type="email" placeholder="Your email address" aria-label="email" required>
+								<button class="footer__block__form__btn d-flex align-items-center justify-content-center border-0 rounded-0" type="submit"><i class="fas fa-paper-plane"></i></button>
+								<div class="invalid-tooltip">Please provide your valid email.</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__bottom text-center">
+			<div class="container">
+				<p class="footer__bottom__text mb-0">Copyright © 2021 <a href="./index.html" class="footer__bottom__link">OfficialPetSpot</a> - All Rights Reserved.</p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scroll To Top Button -->
+	<button class="scroll-top border-0 position-fixed">
+		<span class="scroll-top__btn d-inline-flex align-items-center justify-content-center"><i class="fas fa-chevron-up"></i></span>
+	</button>
+
+	<!-- All Scripts -->
+	<script src="./assets/js/jquery-1.12.4.min.js"></script>
+	<script src="./assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+	<script src="./assets/plugins/fontawesome/js/all.min.js"></script>
+	<script src="./assets/plugins/slick-slider/js/slick.js"></script>
+	<script src="./assets/plugins/xzoom/js/xzoom.min.js"></script>
+	<script src="./assets/plugins/input/js/bootstrap-input-spinner.js"></script>
+	<script src="./assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+/* 
+------------------
+Template Name: PetSpot | E-Commerce Type Website
+Version: 1.00
+------------------
+
+----------------
+Table of CSS Content
+----------------
+1.Google Fonts Link
+2.Typography Reset
+3.Reset CSS
+
+------------------
+*/
+@import "./abstracts/variable";
+@import "./abstracts/mixin";
+@import "./abstracts/function";
+@import "./base/typography";
+@import "./base/common";
+@import "./abstracts/extend";
+@import "./components/buttons";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./sections/products";
+@import "./sections/blogs";
+@import "./sections/modals";
+@import "./pages/home";
