@@ -81,14 +81,6 @@ ol {
 			width: toRem(70);
 			height: toRem(70);
 		}
-		// &--left{
-		// 	left: 41vw;
-		// 	transform: translate(-50%, 0);
-		// }
-		// &--right{
-		// 	right: 41vw;
-		// 	transform: translate(50%, 0);
-		// }
 		&:hover,
 		&:focus{
 			color: $color-secondary;

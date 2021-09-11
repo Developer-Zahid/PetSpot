@@ -1,0 +1,23 @@
+/* Sub Banner Section Style */
+.sub-banner{
+    background: url(../images/banner/sub-banner.webp) no-repeat center;
+    background-size: cover;
+    padding: 8rem 0 10rem;
+    &__title{
+        font-size: 3rem;
+        font-weight: 700;
+    }
+    .breadcrumb{
+        &-item{
+            font-size: 1.2rem;
+            &.active,
+            &:hover,
+            &:focus{
+                color: $color-primary;
+            }
+        }
+        &-link{
+            @extend %transition;
+        }
+    }
+}

@@ -1,32 +1,42 @@
 /* Form Section Style */
 .contact-form{
-    .section-header{
-        margin-bottom: toRem(20);
+    &__title{
+        color: $color-primary;
+        font-size: toRem(28);
+        font-weight: 700;
+        font-family: $font-primary;
+        @include min-tablet{
+            font-size: toRem(34);
+        }
+    }
+    &__text{
+        @include mobile{
+            font-size: toRem(12);
+        }
     }
     .form{
         &-group{
             margin-bottom: toRem(30);
-            .invalid-feedback{
-                width: max-content;
-            }
         }
         &-control{
-            padding: toRem(13) toRem(20);
+            padding-left: toRem(15);
+            padding-right: toRem(15);
             text-shadow: none;
+            border-color: $color-gray;
+            min-height: toRem(55);
             @extend %transition;
             &--textarea{
                 resize: none;
-                height: toRem(150);
-            }
-            &::placeholder{
-                color: inherit;
-                font-size: toRem(14);
-                @extend %transition;
+                height: toRem(200);
+                &::placeholder{
+                    @include mobile{
+                        font-size: toRem(14);
+                    }
+                }
             }
             &:hover,
             &:focus{
-                color: currentColor;
-                border-color: inherit;
+                border-color: $color-primary;
             }
             &:valid{
                 color: currentColor;
