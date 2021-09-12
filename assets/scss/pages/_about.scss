@@ -1,0 +1,17 @@
+/* About Us Section Style */
+.about{
+    &__image{
+        @include tablet{
+            max-width: 12rem;
+        }
+    }
+    &__title,
+    &__sub-title{
+        font-weight: 600;
+    }
+    &__title{
+        @include min-tablet{
+            font-size: toRem(40);
+        }
+    }
+}

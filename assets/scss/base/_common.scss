@@ -44,6 +44,11 @@ button:active {
 	outline: none;
 }
 
+input:-webkit-autofill {
+    -webkit-text-fill-color: $color-secondary;
+    transition: background-color 5000s;
+}
+
 ul,
 ol {
 	list-style: none;

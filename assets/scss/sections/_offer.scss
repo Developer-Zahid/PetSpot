@@ -1,0 +1,30 @@
+/* Offers Section Style */
+.offer{
+    background: url(../images/offers/offers-banner.png) no-repeat center;
+    background-size: cover;
+    @include min-desktop{
+        background-size: contain;
+    }
+    &__badge{
+        padding: toRem(10) toRem(20);
+        font-weight: 600;
+        font-family: $font-secondary;
+        background-color: $color-white;
+        border-color: $color-gray-deep;
+    }
+    &__title{
+        font-weight: 600;
+        @include min-tablet{
+            font-size: toRem(40);
+        }
+        @include min-desktop{
+            font-size: toRem(60);
+        }
+        &__highligt{
+            color: $color-primary;
+            &--shadow{
+                text-shadow: 2px 2px 0 rgba($color-white, $alpha: 0.8);
+            }
+        }
+    }
+}

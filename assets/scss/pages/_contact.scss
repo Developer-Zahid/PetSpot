@@ -1,4 +1,22 @@
 /* Contact Section Style */
+.contact-form{
+    &__title{
+        color: $color-primary;
+        font-size: toRem(28);
+        font-weight: 700;
+        font-family: $font-primary;
+        @include min-tablet{
+            font-size: toRem(34);
+        }
+    }
+    &__text{
+        @include mobile{
+            font-size: toRem(12);
+        }
+    }
+}
+
+/* Map Section Style */
 .map{
     &__iframe{
         height: toRem(400);

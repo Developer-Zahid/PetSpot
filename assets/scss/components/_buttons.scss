@@ -16,3 +16,30 @@
 		font-size: toRem(16);
 	}
 }
+
+.tag-btn{
+	font-size: toRem(14);
+	font-weight: 600;
+	font-family: $font-secondary;
+	border: 1px solid $color-secondary;
+	padding: 0.2rem 1rem;
+	@extend %transition;
+	&:hover{
+		background-color: $color-primary;
+		border-color: $color-primary;
+	}
+}
+
+.navigation-btn{
+	font-size: 1.1rem;
+	font-weight: 600;
+	font-family: $font-secondary;
+	@extend %transition;
+	&__icon{
+		font-size: 1.5rem;
+	}
+	&:hover,
+	&:focus{
+		color: $color-primary;
+	}
+}

@@ -1,45 +1,50 @@
-/* Form Section Style */
-.contact-form{
-    &__title{
-        color: $color-primary;
-        font-size: toRem(28);
-        font-weight: 700;
-        font-family: $font-primary;
-        @include min-tablet{
-            font-size: toRem(34);
-        }
+/* Common Form Style */
+.form{
+    &-group{
+        margin-bottom: toRem(30);
     }
-    &__text{
-        @include mobile{
-            font-size: toRem(12);
-        }
-    }
-    .form{
-        &-group{
-            margin-bottom: toRem(30);
-        }
-        &-control{
-            padding-left: toRem(15);
-            padding-right: toRem(15);
-            text-shadow: none;
-            border-color: $color-gray;
-            min-height: toRem(55);
-            @extend %transition;
-            &--textarea{
-                resize: none;
-                height: toRem(200);
-                &::placeholder{
-                    @include mobile{
-                        font-size: toRem(14);
-                    }
+    &-control{
+        padding-left: toRem(15);
+        padding-right: toRem(15);
+        text-shadow: none;
+        border-color: $color-gray;
+        min-height: toRem(55);
+        @extend %transition;
+        &--textarea{
+            resize: none;
+            height: toRem(200);
+            &::placeholder{
+                @include mobile{
+                    font-size: toRem(14);
                 }
             }
-            &:hover,
-            &:focus{
+        }
+        &:hover,
+        &:focus{
+            border-color: $color-primary;
+        }
+        &:valid{
+            color: currentColor;
+        }
+    }
+    .custom-control{
+        .custom-control-label{
+            font-size: toRem(14);
+            cursor: pointer;
+            &::before{
+                border-radius: 0;
+                box-shadow: none;
+                background-color: $color-white;
+                border-color: $color-gray;
+            }
+        }
+        .custom-control-input{
+            &:checked ~ .custom-control-label::before{
+                background-color: $color-primary;
                 border-color: $color-primary;
             }
-            &:valid{
-                color: currentColor;
+            &:focus:not(:checked) ~ .custom-control-label::before{
+                border-color: $color-primary;
             }
         }
     }

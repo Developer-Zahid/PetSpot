@@ -55,4 +55,82 @@
             }
         }
     }
+    &__details{
+        &__meta{
+            .meta{
+                &__text{
+                    font-weight: 500;
+                    font-family: $font-secondary;
+                    
+                }
+                &__icon{
+                    color: $color-primary;
+                }
+                &__authore{
+                    @extend %transition;
+                    &:hover,
+                    &:focus{
+                        color: $color-primary;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        &__title{
+            font-weight: 700;
+            @include mobile{
+                font-size: toRem(28);
+            }
+        }
+        &__text{
+            color: $color-gray-deep;
+        }
+        &__blockquote{
+            color: $color-white;
+            background-color: $color-secondary;
+            border-left: 7px solid $color-primary;
+            padding: 2rem;
+            @include min-tablet{
+                padding: 2rem 3rem;
+            }
+            &__text{
+                font-weight: 600;
+                font-family: $font-secondary;
+            }
+        }
+        &__navigation{
+            border-top: 1px solid $color-gray;
+            border-bottom: 1px solid $color-gray;
+        }
+    }
+    &__aside{
+        &__card{
+            background-color: lighten($color-gray, $amount: 8);
+            &__head{
+                color: $color-white;
+                background-color: $color-secondary;
+            }
+            &__body{
+                padding: 0.5rem 3rem;
+                gap: 0.5rem;
+            }
+            &__list__item{
+                padding: 0.8rem 0;
+                &:not(:last-child){
+                    border-bottom: 1px solid $color-gray;
+                }
+            }
+            &__link{
+                font-size: 1.05rem;
+                font-weight: 600;
+                font-family: $font-secondary;
+                @extend %transition;
+                &:hover,
+                &:focus{
+                    color: $color-primary;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
 }
