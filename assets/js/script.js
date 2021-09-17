@@ -200,6 +200,12 @@
 	$('#collar-popup-modal, #harness-popup-modal, #leash-popup-modal').on('shown.bs.modal', function () {
 		$('.choice-slider').resize();
 		$('.xzoom-slider').resize();
-	})
+	});
+
+	// Get thead titles from Responsive Cart Table and append those into tbody table data items as a "data-title" attribute
+	$(".responsive-table__body__text--product").attr("data-title", $(".responsive-table__head__title--product").text())
+	$(".responsive-table__body__text--price").attr("data-title", $(".responsive-table__head__title--price").text())
+	$(".responsive-table__body__text--quantity").attr("data-title", $(".responsive-table__head__title--quantity").text())
+	$(".responsive-table__body__text--total").attr("data-title", $(".responsive-table__head__title--total").text())
 
 })(jQuery);

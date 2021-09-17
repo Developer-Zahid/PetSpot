@@ -53,30 +53,6 @@
                 }
             }
         }
-        .input-spinner{
-            max-width: 8rem;
-            .input-group{
-                flex-direction: row-reverse;
-                font-family: $font-secondary;
-                .btn{
-                    color: $color-white;
-                    background-color: $color-secondary;
-                    border-color: $color-secondary;
-                    &:hover{
-                        background-color: $color-primary;
-                        border-color: $color-primary;
-                    }
-                }
-                > .form-control:focus{
-                    z-index: 1;
-                }
-            }
-            &__input{
-                font-weight: 500;
-                box-shadow: none;
-                border-color: $color-gray;
-            }
-        }
         .primary-btn{
             font-size: toRem(14);
         }

@@ -1,1 +1,162 @@
 /* Cart Section Style */
+.cart{
+    &__wrapper{
+        &__delete-btn{
+            @extend %transition;
+            &:hover,
+            &:focus{
+                color: $color-danger;
+            }
+        }
+        .input-spinner .btn{
+			background-color: darken($color-gray, $amount: 8);
+			border-color: darken($color-gray, $amount: 8);
+		}
+        &__form{
+            @include tablet{
+                width: 100%;
+            }
+            @include min-mobile-xxs{
+                flex-wrap: nowrap !important;
+            }
+        }
+        @include mobile-xxs{
+            .primary-btn{
+                width: 100%;
+            }
+        }
+        &__total-table{
+            tr{
+                border-bottom: 1px solid lighten($color-gray, $amount: 5);
+            }
+            th,
+			td {
+				padding: 1rem 0.2rem;
+			}
+            .bold-text{
+                font-size: 1.2rem;
+                font-weight: 700;
+            }
+            &__title{
+                font-size: 1.4rem;
+                font-weight: 600;
+                font-family: $font-secondary;
+                width: 50%;
+                @include min-tablet{
+                    width: 20%;
+                }
+            }
+        }
+    }
+    &__details{
+        &__image{
+            max-width: 5rem;
+            border: 1px solid $color-gray;
+        }
+        &__name{
+            font-weight: 600;
+            font-family: $font-secondary;
+            @extend %transition;
+        }
+        &:hover,
+        &:focus{
+            .cart__details__name{
+                color: $color-primary;
+                text-decoration: underline;
+            }
+        }
+    }
+    .responsive-table {
+		&__row {
+			display: grid;
+			border-bottom: 1px solid lighten($color-gray, $amount: 5);
+			@include mobile-to-tablet {
+				grid-template-columns: 0.3fr 2fr 1fr;
+                grid-template-rows: 1fr 1fr;
+			}
+			@include min-tablet {
+				grid-template-columns: 0.5fr 2fr 1fr 2fr 1fr;
+			}
+			@include min-desktop {
+				grid-template-columns: 0.5fr 1.5fr 1fr 2fr 1fr;
+			}
+			th,
+			td {
+				padding: 1rem 0.2rem;
+				@include tablet-to-desktop {
+					padding: 0.5rem;
+				}
+			}
+		}
+		&__head {
+			@include tablet {
+				display: none;
+			}
+			&__title {
+				display: flex;
+				align-items: center;
+				color: $color-secondary;
+                font-size: 1.1rem;
+				font-weight: 600;
+				font-family: $font-secondary;
+				text-transform: capitalize;
+                @include min-desktop-lg {
+                    font-size: 1.4rem;
+                }
+			}
+		}
+		&__body {
+			&__text {
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				font-size: 0.95rem;
+				&::before {
+					margin-right: 1rem;
+					font-weight: 600;
+					text-transform: capitalize;
+				}
+				@include tablet {
+					&::before {
+						content: attr(data-title) " :";
+					}
+				}
+				@include mobile-xxs {
+					&::before {
+						width: 100%;
+						margin-bottom: 1rem;
+					}
+				}
+                &--price,
+                &--total{
+                    font-family: $font-secondary;
+                }
+                &--trash {
+					&::before {
+                        display: none;
+                    }
+					
+				}
+                &--product {
+					@include min-tablet {
+						&::before {
+							display: none;
+						}
+					}
+					
+				}
+                @include mobile-to-tablet {
+                    &--trash {
+                        grid-row: span 2;
+                    }
+                    &--quantity {
+                        grid-column: 2/3;
+                    }
+                    &--total {
+                        grid-column: 3/4;
+                    }
+                }
+			}
+		}
+	}
+}

@@ -107,12 +107,110 @@
 		</div>
 	</section>
 
-	<!-- Contact Section -->
+	<!-- Cart Section -->
 	<section class="cart section-gap">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					
+					<div class="cart__wrapper">
+						<table class="responsive-table w-100">
+							<!-- Responsive Table Header Section -->
+							<thead class="responsive-table__head">
+								<tr class="responsive-table__row">
+									<th class="responsive-table__head__title responsive-table__head__title--trash"></th>
+									<th class="responsive-table__head__title responsive-table__head__title--product">Product</th>
+									<th class="responsive-table__head__title responsive-table__head__title--price">Price</th>
+									<th class="responsive-table__head__title responsive-table__head__title--quantity">Quantity</th>
+									<th class="responsive-table__head__title responsive-table__head__title--total">Total</th>
+								</tr>
+							</thead>
+							<!-- Responsive Table Body Section -->
+							<tbody class="responsive-table__body">
+								<tr class="responsive-table__row">
+									<td class="responsive-table__body__text responsive-table__body__text--trash">
+										<button class="cart__wrapper__delete-btn bg-transparent border-0 p-2">
+											<i class="fas fa-trash"></i>
+										</button>
+									</td>
+									<td class="responsive-table__body__text responsive-table__body__text--product">
+										<a href="./collar.html" class="cart__details d-flex align-items-center">
+											<img src="./assets/images/products/category-A/product-1.jpg" alt="Product Image" class="cart__details__image w-100">
+											<span class="cart__details__name ml-2">Spotcollar</span>
+										</a>
+									</td>
+									<td class="responsive-table__body__text responsive-table__body__text--price">$44</td>
+									<td class="responsive-table__body__text responsive-table__body__text--quantity">
+										<div class="input-spinner mb-3 mb-sm-0 mr-3">
+											<input class="input-spinner__input p-0" type="number" value="0" min="0" step="1">
+										</div>
+									</td>
+									<td class="responsive-table__body__text responsive-table__body__text--total">$44</td>
+								</tr>
+								<tr class="responsive-table__row">
+									<td class="responsive-table__body__text responsive-table__body__text--trash">
+										<button class="cart__wrapper__delete-btn bg-transparent border-0 p-2">
+											<i class="fas fa-trash"></i>
+										</button>
+									</td>
+									<td class="responsive-table__body__text responsive-table__body__text--product">
+										<a href="./harness.html" class="cart__details d-flex align-items-center">
+											<img src="./assets/images/products/category-B/product-1.jpg" alt="Product Image" class="cart__details__image w-100">
+											<span class="cart__details__name ml-2">Spotharness</span>
+										</a>
+									</td>
+									<td class="responsive-table__body__text responsive-table__body__text--price">$9.25 </td>
+									<td class="responsive-table__body__text responsive-table__body__text--quantity">
+										<div class="input-spinner mb-3 mb-sm-0 mr-3">
+											<input class="input-spinner__input p-0" type="number" value="0" min="0" step="1">
+										</div>
+									</td>
+									<td class="responsive-table__body__text responsive-table__body__text--total">$9.25 </td>
+								</tr>
+								<tr class="responsive-table__row">
+									<td class="responsive-table__body__text responsive-table__body__text--trash">
+										<button class="cart__wrapper__delete-btn bg-transparent border-0 p-2">
+											<i class="fas fa-trash"></i>
+										</button>
+									</td>
+									<td class="responsive-table__body__text responsive-table__body__text--product">
+										<a href="./leash.html" class="cart__details d-flex align-items-center">
+											<img src="./assets/images/products/category-C/product-1.png" alt="Product Image" class="cart__details__image w-100">
+											<span class="cart__details__name ml-2">Spotleash</span>
+										</a>
+									</td>
+									<td class="responsive-table__body__text responsive-table__body__text--price">$15</td>
+									<td class="responsive-table__body__text responsive-table__body__text--quantity">
+										<div class="input-spinner mb-3 mb-sm-0 mr-3">
+											<input class="input-spinner__input p-0" type="number" value="0" min="0" step="1">
+										</div>
+									</td>
+									<td class="responsive-table__body__text responsive-table__body__text--total">$15</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="cart__wrapper__actions d-flex flex-wrap align-items-center justify-content-between my-5">
+							<form action="#!" class="cart__wrapper__form form-inline align-items-stretch position-relative needs-validation" novalidate>
+								<input class="form-control d-flex flex-grow-1 shadow-none border-0 rounded-0 h-auto" type="text" name="coupon_code" placeholder="Coupon code" required>
+								<button class="primary-btn d-flex align-items-center justify-content-center flex-shrink-0 border-0 rounded-0" type="submit">Apply coupon</button>
+								<div class="invalid-tooltip">Please provide a valid coupon code.</div>
+							</form>
+							<button class="primary-btn d-flex align-items-center justify-content-center border-0 rounded-0 mt-4 mt-md-0" type="button">Update cart</button>
+						</div>
+					</div>
+					<h1 class="font-weight-bold">Cart totals</h1>
+					<table class="cart__wrapper__total-table w-100">
+						<tbody>
+							<tr class="f-flex w-100">
+								<th class="cart__wrapper__total-table__title" scope="row">Subtotal</th>
+								<td>$68.25</td>
+							</tr>
+							<tr class="f-flex w-100">
+								<th class="cart__wrapper__total-table__title" scope="row">Total</th>
+								<td class="bold-text">$68.25</td>
+							</tr>
+						</tbody>
+					</table>
+					<button class="primary-btn d-flex align-items-center justify-content-center border-0 rounded-0 mt-4" type="button">Checkout</button>
 				</div>
 			</div>
 		</div>

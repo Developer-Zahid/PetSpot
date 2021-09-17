@@ -146,6 +146,34 @@ ol {
 	border: 1px solid $color-gray;
 }
 
+/* Common Input Spinner Style */
+.input-spinner{
+	max-width: 8rem;
+	.input-group{
+		flex-direction: row-reverse;
+		font-family: $font-secondary;
+		.btn{
+			color: $color-white;
+			background-color: $color-secondary;
+			border-color: $color-secondary;
+			box-shadow: none !important;
+			&:hover,
+			&:focus{
+				background-color: $color-primary;
+				border-color: $color-primary;
+			}
+		}
+		> .form-control:focus{
+			z-index: 1;
+		}
+	}
+	&__input{
+		font-weight: 500;
+		box-shadow: none !important;
+		border-color: $color-gray;
+	}
+}
+
 /* Veno Box Style */
 .vbox{
 	&-close{
@@ -212,7 +240,6 @@ ol {
 	}
 }
 
-
 /* Common Section Heading Style */
 .section-header{
 	margin-bottom: toRem(40);
@@ -260,7 +287,6 @@ ol {
 		}
 	}
 }
-
 
 /* Common Horizontal Line Style */
 .hr{
