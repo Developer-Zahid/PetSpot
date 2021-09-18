@@ -116,7 +116,7 @@
 		]
 	});
 
-    /*  Banner slider init */
+    /*  Xzoom slider init */
 	$(".xzoom-slider").slick({
 		slidesToShow: 3,
 		slidesToScroll: 1,
@@ -140,7 +140,7 @@
 		]
 	});
 
-    /*  Banner slider init */
+    /*  Choice slider init */
 	$(".choice-slider").slick({
 		slidesToShow: 4,
 		slidesToScroll: 1,
@@ -164,13 +164,52 @@
 		]
 	});
 
-    // // veno box
-    // $('.venobox').venobox({
-    //     bgcolor    : '#ffffff',
-    //     spinner    : 'three-bounce',
-    //     border     : '10px',
-    //     frameheight: '82vh',
-    // });
+    /*  Products slider init */
+	$(".products__slider").slick({
+		slidesToShow: 4,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 4000,
+		speed: 800,
+		arrows: true,
+		prevArrow: '<button class="slick__arrows slick__arrows--left border-0 d-inline-flex align-items-center justify-content-center position-absolute"><i class="fas fa-chevron-left"></i></button>',
+		nextArrow: '<button class="slick__arrows slick__arrows--right border-0 d-inline-flex align-items-center justify-content-center position-absolute"><i class="fas fa-chevron-right"></i></button>',
+		dots: false,
+		pauseOnHover: false,
+		pauseOnFocus: false,
+		infinite: true,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3,
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+				}
+			},
+		]
+	});
+
+    /*  Products Details Xzoom slider init */
+	$(".products-details__xzoom-slider").slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 4000,
+		speed: 800,
+		arrows: true,
+		vertical: true,
+		prevArrow: '<button class="slick__arrows slick__arrows--up border-0 d-inline-flex align-items-center justify-content-center position-absolute"><i class="fas fa-chevron-up"></i></button>',
+		nextArrow: '<button class="slick__arrows slick__arrows--down border-0 d-inline-flex align-items-center justify-content-center position-absolute"><i class="fas fa-chevron-down"></i></button>',
+		dots: false,
+		pauseOnHover: false,
+		pauseOnFocus: false,
+		infinite: true,
+	});
 
 	/*  XZoom init */
 	(function() {
@@ -188,6 +227,14 @@
 			tint: '#252729',
 			Xoffset: 30,
 			fadeOut: true,
+		});
+		$('.xzoom--products-details, .xzoom-gallery--products-details').xzoom({
+			position: 'lens',
+			tint: '#000000',
+			lens: true,
+			lensShape: "circle",
+			fadeOut: true,
+			sourceClass: 'xzoom-hidden'
 		});
 	})();
 

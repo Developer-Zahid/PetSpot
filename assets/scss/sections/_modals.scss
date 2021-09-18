@@ -37,17 +37,22 @@
                 gap: toRem(10);
                 .xzoom-gallery,
                 .xzoom-gallery2,
-                .xzoom-gallery3{
+                .xzoom-gallery3,
+                .xzoom-gallery--products-details{
                     max-width: toRem(60);
                     @extend %transition;
                 }
             }
             &-item{
+                a{
+                    display: inline-block;
+                }
                 &.active,
                 &:hover{
                     .xzoom-gallery,
                     .xzoom-gallery2,
-                    .xzoom-gallery3{
+                    .xzoom-gallery3,
+                    .xzoom-gallery--products-details{
                         border-color: $color-primary;
                     }
                 }

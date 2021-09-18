@@ -61,6 +61,14 @@ ol {
 	}
 }
 
+/* Preloader Style */
+.preloader{
+	top: 0;
+	left: 0;
+	z-index: 9999;
+}
+
+/* Common Form Control Style */
 .form-control{
 	&:focus{
 		text-shadow: none;
@@ -142,7 +150,8 @@ ol {
 }
 .xzoom,
 .xzoom2,
-.xzoom3{
+.xzoom3,
+.xzoom-gallery--products-details{
 	border: 1px solid $color-gray;
 }
 
@@ -171,45 +180,6 @@ ol {
 		font-weight: 500;
 		box-shadow: none !important;
 		border-color: $color-gray;
-	}
-}
-
-/* Veno Box Style */
-.vbox{
-	&-close{
-		top: 2%;
-		right: 2%;
-		width: 4rem;
-		height: 4rem;
-		border-radius: 50%;
-		padding: 0;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		font-size: 3rem;
-		color: $color-white !important;
-		@extend %transition;
-		@include tablet{
-			width: 3rem;
-			height: 3rem;
-			font-size: 2rem;
-		}
-		&:hover,
-		&:focus{
-			color: currentColor !important;
-		}
-	}
-	&-next,
-	&-prev{
-		width: 3rem;
-		height: 3rem;
-		span{
-			width: 2rem;
-			height: 2rem;
-			border-width: 4px;
-			border-top-color: $color-primary !important;
-			border-right-color: $color-primary !important;
-		}
 	}
 }
 
