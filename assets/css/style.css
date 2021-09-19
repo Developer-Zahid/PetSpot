@@ -13,7 +13,6 @@ Table of CSS Content
 Google Fonts Link
 Typography Reset
 Reset CSS
-Preloader Style
 Common Slick Slider Style
 Common XZoom Style
 Common Input Spinner Style
@@ -154,13 +153,6 @@ ol {
   .container {
     max-width: 1250px;
   }
-}
-
-/* Preloader Style */
-.preloader {
-  top: 0;
-  left: 0;
-  z-index: 9999;
 }
 
 /* Common Form Control Style */
@@ -1959,6 +1951,7 @@ ol {
   }
 }
 
+/* Banner Section Style */
 /* Contact Section Style */
 .contact-form__title {
   color: #d4af37;
